@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /myprojek/ci_google/
+ 
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?/$1 [L]
+  
+  #SERVER JER: This checks to make sure the connection is not already HTTPS
+  #RewriteCond %{HTTPS} !=on
+  #RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+
+  ErrorDocument 404 /index.php
+</IfModule>
+
+php_value upload_max_filesize 1000M  
+php_value post_max_size 1000M  
