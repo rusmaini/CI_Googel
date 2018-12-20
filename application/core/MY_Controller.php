@@ -13,7 +13,7 @@ class MY_Controller extends CI_Controller
             'company' 			=> 'crockcms',
             'per_page' 			=> '20',
             'contact_email' 	=> 'crockcms@gmail.com',
-			'theme'				=> 'staradmin',
+			'theme'				=> 'aside',
 			'url_foto'			=> 'https://picsum.photos/200/300/?random',
 			'footer'			=> '&copy; 2018 Crockcms. All rights reserved.'
         );

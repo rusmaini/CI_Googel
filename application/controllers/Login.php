@@ -6,7 +6,6 @@ class Login extends MY_Controller{
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->Model('Mldap');
 	}
 	
 	function index()
@@ -21,7 +20,7 @@ class Login extends MY_Controller{
 		$this->form_validation->set_error_delimiters('<p class="text-danger">', '</p>');
 		
 		if ($this->form_validation->run() == FALSE):
-			$this->load->view($theme.'/template/login',$data);
+			$this->load->view($theme.'/template/index',$data);
 		else:
 		
 				

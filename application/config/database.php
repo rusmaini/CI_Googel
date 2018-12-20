@@ -73,25 +73,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-/*****************************************************************************************
-$hostname = '(DESCRIPTION =
-			  (ADDRESS_LIST =
-				(ADDRESS = (PROTOCOL = TCP)(HOST = mis.uthm.edu.my)(PORT = 1521))
-			  )
-			  (CONNECT_DATA =
-				(SERVICE_NAME = mis)
-			  )
-			)';
-
-//SMP
-#$username 	= 'smp';
-#$password	= 'xqxfts';
-
-//SMK
-$username 	= 'smk';
-$password	= 'xpkxts';
-*****************************************************************************************/
-
 $hostname	= 'localhost';
 $username 	= 'root';
 $password	= '';
